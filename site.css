@@ -1,0 +1,33 @@
+container
+{	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+	
+}
+body{
+	background-color:#dae3e6;
+}
+h1{
+	background-color:#217791;
+	color:white;
+	border: 1px solid #D6A800
+	padding: 10px;
+}
+h2{
+	background-color:#2d218a;
+	color:white;
+	border: 1px solid #D6A800
+	padding: 10px;
+}
+h3{
+	background-color:#0d82a6;
+	color:white;
+	border: 1px solid #D6A800;
+	padding: 10px;
+}
+h4{
+	background-color:#2d218a;
+	color:white;
+	border: 1px solid #D6A800
+	padding: 10px;
+}

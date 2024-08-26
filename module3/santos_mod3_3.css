@@ -1,0 +1,60 @@
+/* Centers the h1 title */
+h1 {
+    text-align: center;
+}
+
+/*Sets bounds of left div and applies a solid red border*/
+div.leftBox {
+    width: 45%;
+    float: left;
+    vertical-align: top;
+	border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+}
+/* Sets bounds of right div and apply dashed red border*/
+div.rightBox{
+	width: 45%;
+	float:right;
+	vertical-align: top;
+	border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Sets the width of the last div to 100% and apply margin-top */
+div.lastDiv {
+    width: 100%;
+    margin-top: 60%;
+	float: right;
+    margin-bottom: 20px;
+}
+
+/* Sets the weight of h3 tags to 500 */
+h3 {
+    font-weight: 500;
+}
+
+/* Sets the weight of lists to 300 */
+ul, ol {
+    font-weight: 300;
+}
+
+/* Change the bullet points of unordered list to upper-roman */
+ul {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+/*Floats link to the right*/
+a{
+	float:right;
+}
+/*Makes link when visited not change*/
+a:visited{
+	text-decoration:none;
+}
+/*underlines and highlights link when hovered over*/
+a:hover{
+	text-decoration:underline;
+	background-color:#51c4af;
+}
