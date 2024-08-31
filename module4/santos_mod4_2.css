@@ -1,0 +1,29 @@
+body{
+	width: 90%;
+}
+h1{
+	text-align: center;
+	background-color:#217791;
+	color:white
+}
+#img1, #img2, #img3{
+	width: 31.3%;
+	float: left;
+	margin: 1%;
+}
+#img3{
+	margin-right:0%;
+}
+h3{
+	text-align:center;
+	background-color:#0d82a6;
+	color:white;
+}
+figure{
+	display: block;
+	text-align:center;
+	margin: auto;
+}
+figcaption{
+	font-style:italic;
+}
