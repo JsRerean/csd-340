@@ -1,0 +1,57 @@
+#navbar{
+  width:100%;
+  background-color: #ff0000;
+  overflow: hidden;
+}
+#navbar ul{
+  list-style-type: none;
+}
+#navbar ul li{
+  float:right;
+}
+#navbar ul li a{
+  display: block;
+  padding:10px;
+  background-color: #ff0000;
+  color:#ffffff;
+  border: solid;
+  border-color: black;
+}
+
+#image{
+  width:50%;
+  float: left;
+}
+img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%
+}
+#textbox{
+  width:50%;
+  text-align: center;
+  float:right;
+}
+.card img{
+  height: 50%;
+  width:100%;
+}
+.card p{
+  height:50%;
+  width:100;
+  background: blue;
+}
+
+#school{
+  float:left;
+  width:30%;
+}
+#work{
+  float:left;
+  width:30%
+}
+#family{
+  float:left;
+  width:30%;
+}
