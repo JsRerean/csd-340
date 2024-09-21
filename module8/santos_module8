@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--Jarred Santos Assignment 6-->
+<html>
+	<head>
+	<title>CSD 340 Web Development with HTML and CSS</title>
+	<link href = "santos_module6_2.css" type="text/css" rel="stylesheet">
+	</head>
+	<header>
+		<h1>Assignment 8.2: Build a Web Page - Part 6</h1>
+	</header>
+	
+	<div id="NavBar">
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Contact</a>
+	</div>
+	
+	<div id="Container">
+		<div class ="Card"> 
+			<div class="Card-Title">Top 5 Favorite Foods</div>
+			<div class="Card-Content">
+			<ol>
+				<li><a href="https://fullbellies.blogspot.com/2011/03/portuguese-pork-chops-and-potatoes.html">Portuguese Pork Chops</a></li>
+				<li><a href="https://www.inspiredtaste.net/11767/salsa-verde-chicken-enchiladas/">Enchiladas</a></li>
+				<li><a href="https://heirloomoven.com/portuguese-donuts-filhos/">Filhos</a></li>
+				<li><a href="https://littlespoonfarm.com/apple-crisp-recipe/">Apple Crisp</a></li>
+				<li><a href="https://www.insidetherustickitchen.com/mushroom-ravioli/">Mushroom Ravioli</a></li>
+			</ol>
+			</div>
+		</div>
+		</br>
+		</br>
+		<div class ="Card"> 
+			<div class="Card-Title">Top 5 Favorite Movies</div>
+			<div class="Card-Content">
+				
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<a href = "../index.html">Return Home</a>
+	</footer>
+	
+	<body>
+	
+	</body>
+</html>

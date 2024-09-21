@@ -2,9 +2,21 @@
   width:100%;
   background-color: #ff0000;
   overflow: hidden;
+  display:flex;
+  justify-content:space-between; /*seperates h1 and ul elements*/
+  align-items:center;
+}
+#navbar h1{
+	margin:0;
+	color:#ffffff;
+	font-family: Trebuchet MS, sans-serif;
 }
 #navbar ul{
   list-style-type: none;
+  display: flex;
+  justify-content:flex-end; /*moves ul elements to the right end side*/
+  margin:0;
+  padding:0;
 }
 #navbar ul li{
   float:right;
@@ -12,46 +24,97 @@
 #navbar ul li a{
   display: block;
   padding:10px;
-  background-color: #ff0000;
+  background-color: #0000ff;
   color:#ffffff;
   border: solid;
   border-color: black;
+  text-align:center; /*align vertically to center*/
+  padding: 10px 15px;
+}
+#navbar ul li a:hover{
+	background-color:#ffff00;
+	color:black;
 }
 
 #image{
-  width:50%;
+  width:49.9%;
   float: left;
+  border:solid;
+  border:white;
 }
 img{
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: 100%
+  height:88%;
 }
 #textbox{
-  width:50%;
+  width:49.9%;
+  height:88%;
   text-align: center;
   float:right;
+  background-color:blue;
+  color:#ffffff;
+  display:space-between;
+}
+#textbox p{
+	margin:4%;
+	padding-top:2%;
+	border:solid;
+	border-color:white;
+	justify-content:center;
+}
+#socials {
+  position: absolute; /* Absolute positioning */
+  bottom: 8px; /* Distance from the bottom */
+  right: 10px; /* Distance from the right */
+  list-style-type: none; /* Remove default list styles */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+#socials ul{
+	display:flex;
+}
+#socials ul li{
+	list-style-type:none;
+	display:flex;
+	justify-content:flex-end;
+	padding: 10px 15px;
+	
+}
+#socials ul li a{
+	display:block;
+	color:white;
 }
 .card img{
   height: 50%;
   width:100%;
 }
 .card p{
-  height:50%;
-  width:100;
+  height:200px;
+  width:100%;
   background: blue;
+  color:#ffffff;
+  border-left:solid;
+  border-left-color:White;
+  padding:10px;
+
 }
 
 #school{
   float:left;
   width:30%;
+  margin:1.25%
 }
+
 #work{
   float:left;
-  width:30%
+  width:30%;
+  margin:1.25%;
+
 }
 #family{
   float:left;
   width:30%;
+  margin:1.25%;
 }
