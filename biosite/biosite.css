@@ -1,10 +1,13 @@
 #navbar{
   width:100%;
-  background-color: #ff0000;
+  background-color: #d1282b;
   overflow: hidden;
   display:flex;
   justify-content:space-between; /*seperates h1 and ul elements*/
   align-items:center;
+  border:solid;
+  border-color:black;
+  width:99.6%
 }
 #navbar h1{
 	margin:0;
@@ -24,15 +27,16 @@
 #navbar ul li a{
   display: block;
   padding:10px;
-  background-color: #0000ff;
+  background-color: #30479c;
+  margin-right:10px;
   color:#ffffff;
   border: solid;
   border-color: black;
   text-align:center; /*align vertically to center*/
-  padding: 10px 15px;
+  padding: 9px 14px;
 }
 #navbar ul li a:hover{
-	background-color:#ffff00;
+	background-color:#ede621;
 	color:black;
 }
 
@@ -40,7 +44,7 @@
   width:49.9%;
   float: left;
   border:solid;
-  border:white;
+  border:black;
 }
 img{
   margin-left: auto;
@@ -49,20 +53,22 @@ img{
   height:88%;
 }
 #textbox{
-  width:49.9%;
-  height:88%;
+  width:49.5%;
+  height:87.59%;
   text-align: center;
   float:right;
-  background-color:blue;
+  background-color:#30479c;
   color:#ffffff;
   display:space-between;
+  border:solid;
+  border-top:none;
+  border-color:black;
 }
 #textbox p{
 	margin:4%;
 	padding-top:2%;
 	border:solid;
 	border-color:white;
-	justify-content:center;
 }
 #socials {
   position: absolute; /* Absolute positioning */
@@ -93,7 +99,7 @@ img{
 .card p{
   height:200px;
   width:100%;
-  background: blue;
+  background: #30479c;
   color:#ffffff;
   border-left:solid;
   border-left-color:White;
@@ -117,4 +123,31 @@ img{
   float:left;
   width:30%;
   margin:1.25%;
+}
+#image-container{
+	display:flex;
+	
+	height:85%;
+}
+#art{
+	float:left;
+	width:49%;
+}
+#art p{
+	height:95px;
+	background:blue;
+	color:white;
+	border:solid;
+	border-color:black;
+}
+#videogames{
+	float:right;
+	width:49%;
+}
+#videogames p{
+	background:blue;
+	height:95px;
+	color:White;
+	border:solid;
+	border-color:black;
 }
