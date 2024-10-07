@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    <p>This is an interactive To-Do list<br>
+    - Enter an item you'd like to add to the list and press Add<br>
+    - Delete Last will delete the item that was last entered<br>
+    - View will display all items currently in the list</p>
+    
+    <input type="text" id="toDoInput" size="20"/>
+    <button id="addBtn">Add</button>
+    <button id="delBtn">Delete Last</button>
+    <button id="viewBtn">View</button>
+    
+    <h2>To-Do List</h2>
+    <ul id="todoList"></ul>
+
+    <script>
+        let toDoItems = [];
+
+        // Add button function
+        document.getElementById('addBtn').addEventListener('click', function() {
+            const inputField = document.getElementById('toDoInput'); // Fixed the ID string
+            const newItem = inputField.value.trim();
+            if (newItem) {
+                toDoItems.push(newItem); // Adds input field contents to array
+                inputField.value = ''; // Clears input field
+                alert(`${newItem} added to the list!`); // Fixed string interpolation
+            } else {
+                alert('Please enter a valid item.');
+            }
+        });
+
+        // Delete last button function
+        document.getElementById('delBtn').addEventListener('click', function() {
+            if (toDoItems.length > 0) {
+                const removedItem = toDoItems.pop(); // Pops last item in list
+                alert(`${removedItem} was removed from the list.`); // Fixed string interpolation
+            } else {
+                alert('List is already empty.');
+            }
+        });
+
+        // View button function
+        document.getElementById('viewBtn').addEventListener('click', function() {
+            const todoList = document.getElementById('todoList');
+            todoList.innerHTML = ''; // Clear the list before displaying
+            if (toDoItems.length === 0) {
+                todoList.innerHTML = '<li>The list is empty.</li>';
+            } else {
+                toDoItems.forEach(item => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = item;
+                    todoList.appendChild(listItem);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
