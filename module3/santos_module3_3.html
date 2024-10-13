@@ -2,12 +2,16 @@
 
 <html>
 <head>
-  <title>Assignment 3.3</title>
+  <title>Assignment 12</title>
   <link href= "santos_mod3_3.css" type= "text/css" rel= "stylesheet"/>
 </head>
 <body>
 <h1>Assignment 3.3: Build a Web Page Exercise - Part 3</h1>
   <div>
+	<div id="button_container">
+		<button id="ascendingBtn">Ascending</button>
+		<button id ="descendingBtn">Descending</button>
+	</div>
     <div class="leftBox">
       <h3>Top 10 Favorite Books</h3>
       <ol>
@@ -38,5 +42,15 @@
 	</div>
     
   <div/>
+  <script>
+	let listItems = document.getElementById('.leftBox ol')
+	const revList = listItems.revers();
+	document.getElementById('ascendingBtn').addEventListener('click', function() {
+		listItems.forEach(item => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = item;
+                    listItems.appendChild(listItem);
+	}
+  </script>
 </body>
 </html>

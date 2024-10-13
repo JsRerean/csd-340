@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment 12</title>
+  <link href="santos_module12.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1>Assignment 12.2: JavaScript - Part 4</h1>
+  <div>
+    <div id="button_container">
+      <button id="ascendingBtn">Ascending</button>
+      <button id="descendingBtn">Descending</button>
+    </div>
+    <div class="leftBox">
+      <h3>Top 10 Favorite Books</h3>
+      <ul id="bookList">
+        <li>Project Hail Mary</li>
+        <li>The Great Work</li>
+        <li>Horus Rising</li>
+        <li>Eragon</li>
+        <li>Lord of the Rings trilogy</li>
+        <li>The Infinite and the Divine</li>
+        <li>Interview with a Vampire</li>
+        <li>The Martian</li>
+        <li>Godeater's Son</li>
+        <li>The Necronomicon</li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    const unorderedList = document.getElementById('bookList');
+    const originalListItems = Array.from(unorderedList.getElementsByTagName('li'));
+
+    function clearList() {
+      unorderedList.innerHTML = '';
+    }
+
+    document.getElementById('ascendingBtn').addEventListener('click', function() {
+      clearList();
+      originalListItems.forEach((item, index) => {
+        const listItem = document.createElement('li');
+        // Set the text content with ascending numbers starting from 1
+        listItem.textContent = `${index + 1}. ${item.textContent}`;
+        unorderedList.appendChild(listItem);
+      });
+    });
+
+    document.getElementById('descendingBtn').addEventListener('click', function() {
+      clearList();
+      const reversedListItems = [...originalListItems].reverse();
+      reversedListItems.forEach((item, index) => {
+        const listItem = document.createElement('li');
+        // Set the text content with descending numbers starting from 10
+        listItem.textContent = `${10 - index}. ${item.textContent}`;
+        unorderedList.appendChild(listItem);
+      });
+    });
+  </script>
+</body>
+</html>
+
